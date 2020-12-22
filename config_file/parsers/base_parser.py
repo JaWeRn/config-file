@@ -143,7 +143,7 @@ class BaseParser(AbstractParser):
 
             parsed_content = self.__parsed_content
             for key in split_keys:
-                error_key = search_key
+                error_key = key
                 parsed_content = parsed_content[key]
         except (KeyError, TypeError):
             raise KeyError(
